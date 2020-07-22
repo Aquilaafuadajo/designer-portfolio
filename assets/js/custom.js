@@ -12,10 +12,10 @@ window.sr = ScrollReveal();
           
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
           const id = Array.from(target)[0].id
-          if(id !== 'carouselExampleControls') {
+          if(id !== 'carouselExampleIndicators') {
             if (target.length) {
             $('html, body').animate({
-              scrollTop: target.offset().top -60
+              scrollTop: target.offset().top -80
             }, 1000);
             return false;
           }
