@@ -205,6 +205,10 @@ nav.navbar {
   padding: 40px;
 }
 
+.credit-text {
+  margin-bottom: 0;
+}
+
 .personal-photo {
   background: url('../images/Rectangle\ 396.svg') no-repeat;
   background-size: cover;
@@ -473,7 +477,7 @@ textarea {
     text-align: center !important;
     font-size: 24px;
     line-height: 31px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .s-28 {
     font-size: 19px;
