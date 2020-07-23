@@ -1,12 +1,11 @@
 :root {
   --custom-font: 'DM Sans', sans-serif;
-  --text-font: 'DM Sans', sans-serif;
   --primary-color: 251, 63, 92;
   --secondary-color: 4, 23, 42;
-  --grey-color: #DDE2E5;
+  --grey-color: 221, 226, 229;
   --white-color: #fff;
   --stain-white-color: #FCFCFC;
-  --black-color: #04172A;
+  --black-color: #000000;
 }
 
 html,body{
@@ -25,7 +24,7 @@ body {
 }
 
 p {
-  font-family: var(--text-font);
+  font-family: var(--custom-font);
 }
 
 img:hover {
@@ -75,6 +74,10 @@ a:active, a:hover {
   border-radius: 5px;
 }
 
+.custom-btn:hover {
+  color: rgba(var(--secondary-color));
+}
+
 .content {
   padding-top: 20px;
   padding-bottom: 60px;
@@ -98,7 +101,7 @@ a:active, a:hover {
 }
 
 .custom-subheading {
-  color: var(--black-color);
+  color: rgba(var(--secondary-color));
   font-weight: 500;
   font-size: 36px;
   line-height: 47px;
@@ -122,8 +125,14 @@ a:active, a:hover {
   line-height: 36px;
 }
 .faint-text {
-  color: rgba(4, 23, 42, 0.6);
+  color: rgba(var(--secondary-color), 0.6);
 }
+.secondary-color {
+  color: rgba(var(--secondary-color));
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
 
 /* NAVBAR */
 
@@ -176,7 +185,7 @@ nav.navbar {
 }
 
 .custom-bold-heading {
-  color: var(--black-color);
+  color: rgba(var(--secondary-color));
   font-weight: bold;
   font-size: 50px;
   line-height: 65px;
@@ -200,7 +209,7 @@ nav.navbar {
 }
 
 .credits {
-  background: rgba(4, 23, 42, 0.8);
+  background: rgba(var(--secondary-color), 0.8);
   text-align: center;
   padding: 40px;
 }
@@ -216,7 +225,7 @@ nav.navbar {
 
 /* LATEST WORKS */
 .bg-light-blue {
-  background: rgba(221, 226, 229, 0.3);
+  background: rgba(var(--grey-color), 0.3);
   padding: 60px 0;
 }
 .m-30 {
@@ -232,7 +241,7 @@ nav.navbar {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color:rgba(4, 23, 42, 0.4);
+  background-color:rgba(var(--secondary-color), 0.4);
   border: 1px solid transparent;
 }
 
@@ -244,9 +253,6 @@ nav.navbar {
   background: rgba(var(--primary-color), 0.3);
 }
 .carousel-section {
-  /* display: flex;
-  justify-content: center;
-  align-content: center; */
   padding: 80px;
 }
 .user-profile {
@@ -260,7 +266,7 @@ nav.navbar {
 .bio p:nth-child(2) {
   font-size: 16px;
   line-height: 24px;
-  color: #707070;
+  color: rgb(112, 112, 112);
 }
 .carousel-card {
   width: 584px;
@@ -270,7 +276,7 @@ nav.navbar {
   line-height: 27px;
   color: #1D1D1D;
   text-align: left;
-  background: #FFFFFF;
+  background: var(--white-color);
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
@@ -284,7 +290,7 @@ nav.navbar {
   align-items: center;
   width: 56px;
   height: 56px;
-  background: white;
+  background: var(--white-color);
   padding: 20px;
   border-radius: 50%;
   /* position: unset; */
