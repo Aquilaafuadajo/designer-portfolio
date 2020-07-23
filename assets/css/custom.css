@@ -102,6 +102,7 @@ a:active, a:hover {
   font-weight: 500;
   font-size: 36px;
   line-height: 47px;
+  margin-bottom: 40px;
 }
 
 .personal-info {
@@ -166,13 +167,12 @@ nav.navbar {
 /* TOP SECTION */
 
 .top {
-  
   background: var(--stain-white-color);
 }
 
 .intro, .personal-photo {
   margin-top: 85px;
-  padding: 60px 120px;
+  padding: 60px 110px;
 }
 
 .custom-bold-heading {
@@ -330,6 +330,12 @@ textarea {
   padding: 20px 15px;
 }
 
+.google-map {
+  border:0;
+  width:100%; 
+  height: 500px;
+}
+
 
 /* FOOTER */
 .footer {
@@ -369,8 +375,51 @@ textarea {
   margin: 0 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  .nav-link {
+    font-size: 20px;
+  }
+  .form-section {
+    padding-right: 0;
+  }
+  .footer p {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 960px) {
-  
+  .intro {
+    padding: 60px 10px 60px 50px;
+  }
+  .intro-text {
+    font-size: 20px;
+  }
+  .personal-photo {
+    padding: 60px 50px 60px 0;
+  }
+  .custom-bold-heading, .light-heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .custom-subheading {
+    font-size: 30px;
+  }
+  .s-28 {
+    font-size: 24px;
+  }
+  .custom-btn {
+    font-size: 24px;
+  }
+  .credit-text {
+    margin-bottom: auto;
+  }
+  .footer p {
+    font-size: 16px;
+    padding: 15px 15px 15px 0;
+  }
+  .form-section {
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -378,8 +427,119 @@ textarea {
 }
 
 @media screen and (max-width: 567px) {
+  .logo {
+    width: 150px;
+  }
   .intro {
     order: 1;
+  }
+  .personal-photo, .intro {
+    padding: 50px;
+  }
+  .intro {
+    margin-top: 0;
+    text-align: center;
+    padding: 20px 40px;
+  }
+  .light-heading, .custom-bold-heading {
+    font-size: 30px;
+    line-height: unset;
+    margin-bottom: 0;
+  }
+  .intro-text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .custom-btn {
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  .section-title {
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+  .section-title:after {
+    content: ' ';
+    display: block;
+    height: 3px;
+    width: 70px;
+    border-radius: 5px;
+    margin: 0px auto;
+    text-indent: -9999px;
+    border-top: 10px solid rgba(var(--primary-color));
+  }
+  .custom-subheading {
+    text-align: center !important;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 20px;
+  }
+  .s-28 {
+    font-size: 19px;
+    line-height: 25px;
+  }
+  .s-24 {
+    font-size: 19px;
+    line-height: 25px;
+  }
+  .m-top-30 {
+    margin-top: 30px;
+  }
+  .credit-text {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .carousel-card {
+    width: 290px;
+    height: 173px;
+    padding: 15px 20px;
+  }
+  .carousel-section {
+    padding: 80px 10px;
+  }
+  .custom-text, .bio p:nth-child(2) {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .form-section {
+    padding-right: 15px;
+  }
+  .profile-photo {
+    width: 39px;
+    height: 39px;
+  }
+  .footer-content {
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .footer p {
+    font-size: 18px;
+    border-right: none;
+    text-align: center;
+  }
+  .social-media img {
+    margin: 0 8px;
+  }
+  .contact {
+    flex-direction: column;
+    justify-items: center;
+  }
+  .control-icon {
+    height: 24px;
+    width: 24px;
+  }
+  .google-map {
+    height: 200px;
+  }
+  .submit-btn {
+    margin: 20px auto;
+  }
+  .credits {
+    padding: 20px 15px;
+  }
+  #latest {
+    padding-bottom: 0;
   }
 }
 
