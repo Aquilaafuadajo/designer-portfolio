@@ -184,6 +184,10 @@ nav.navbar {
   padding: 60px 110px;
 }
 
+.photo {
+  padding: 0 10%;
+}
+
 .custom-bold-heading {
   color: rgba(var(--secondary-color));
   font-weight: bold;
@@ -385,6 +389,58 @@ textarea {
   margin: 0 20px;
 }
 
+/* PROGRESS BAR */
+.meter { 
+	height: 15px;  /* Can be anything */
+	position: relative;
+	background: #E5E5E5;
+  border-radius: 6px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.progress {
+  display: block;
+  height: 100%;
+  border-radius: 6px;
+  background-color: rgba(var(--primary-color));
+  position: relative;
+  overflow: hidden;
+}
+
+.percent {
+  font-size: 8px;
+  background: rgba(var(--primary-color));
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 10px;
+  animation: rotating 5s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .nav-link {
     font-size: 20px;
@@ -394,6 +450,12 @@ textarea {
   }
   .footer p {
     font-size: 20px;
+  }
+  /* .photo {
+    padding: 0;
+  } */
+  .intro, .personal-photo {
+    padding: 60px 70px;
   }
 }
 

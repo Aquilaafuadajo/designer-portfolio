@@ -24,14 +24,10 @@ window.sr = ScrollReveal();
       });
     });
 
-    // HAMBURGER ANIMATION
-    $(document).ready(function () {
-
-      $('.first-button').on('click', function () {
-  
-        $('.animated-icon1').toggleClass('open');
-      });
-      });
+    // BOOTSTRAP CAROUSEL
+    $('#carouselExampleIndicators').carousel({
+      interval: 2000
+    });
 
       // AOS 
       AOS.init({
